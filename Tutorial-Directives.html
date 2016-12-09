@@ -1,0 +1,15 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+  <div ng-app="myApp" first-directive>
+  </div>
+  <script>
+  var app= angular.module("myApp",[]);
+  app.directive("firstDirective",function(){
+    return{
+      template: "I am yellow"
+    };
+  });
+  </script>
+</body>
+</html>
