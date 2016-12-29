@@ -1,9 +1,10 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script>
 	var app= angular.module("myApp",[]);
 	app.controller("myCtrl", function($scope){
+
 		$scope.firstName= "Aditi";
 		$scope.lastName= "Anand";
 	});
@@ -13,7 +14,7 @@
          $scope.numy=3;
 	});
 </script>
-<body> 
+<body>
 <h1>Tutorial 2 Controllers</h1>
 <div id="1" ng-app="myApp" ng-controller="myCtrl"> 
 	First Name: <input type="text" ng-model="firstName"> <br>
@@ -23,7 +24,7 @@
 </div>
 <div id="2" ng-app="add" ng-controller="myAdd">
 	Number One: <input type="number" ng-model="numl"> <br>
-	Number Two: <input type="number" ng-model="numy"> 
+	Number Two: <input type="number" ng-model="numy">
 	<br>
 	Total: {{numl * numy }}
 </div>
