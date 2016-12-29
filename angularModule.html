@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="angularModule.js">
+
+</script>
+<body>
+<div ng-app="myApp">
+<form name="serachUser" ng-controller="SearchController">
+  <input type="search" placeholder="Username to find" ng-model="username"  />
+  <input type="submit" value="Search" ng-click= "search(username)"/>
+  {{username}}
+
+</form>
+</div>
+</body>
+</html>
